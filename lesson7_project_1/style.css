@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CSS Document created by Kerri Cotter, Spring 2019*/
+
+body {
+	font-family: "Verdana", cursive, sans-serif;
+	font-size: 16px;
+	line-height: 1.8em;
+	color: #00000;;
+	background-color: #ffe6cc;
+	padding: 0 40px;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #00000;
+	margin: 25px;
+	
+
+}
+h1 {
+	font-size: 35px;
+	font-weight: bolder;
+	padding: 4px 0;
+	margin: 25px;
+	font-variant: normal;
+	letter-spacing: .4em;
+	line-height: 2em;
+	text-align:center;
+	
+}
+h2 {
+	font-size: 28px;
+	padding: 6px;
+	margin: 25px;
+	font-variant: normal;
+	font-weight: lighter;
+	letter-spacing: 0.8em;
+	text-align: center;
+	background-color: #ccccff;
+
+}
+h3 {
+	font-size: 25px;
+	letter-spacing: 0.25em;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #ccccff;
+	padding: 4px 0;
+	font-variant: small-caps;
+	font-style: italic;
+}
+h4 {
+	font-size: 20px;
+	letter-spacing: 0.25em;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #ccccff;
+	padding: 4px 0;
+	font-variant: normal;
+	font-style: normal;
+	
+}
+
+/* link styles ---------------------------- */
+a:link {
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff0000;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	list-style-image: url(images/star.png);
+	margin-left: 12px;
+}
+ol {
+	margin-left: 14px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #ccccff 1px;
+}
+td {
+	padding: 6px;
+	border: solid #ccccff 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #ccccff;
+	text-align: center;
+	padding: 6px;
+	border: solid #e6ffcc 1px;
+}
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid #B22222 1px;
+}
+
+img {
+	border: solid #B22222 1px;
+	margin:auto;
+	text-align: center;
+
+}
+
+iframe {
+	border: solid 	#B22222 1px;
+	padding: 8px;
+	margin: 8px;
+}
+
+/* DIV STYLES FOR PAGE LAYOUT */
+
+#container { 
+	width: 900px; 
+	margin: 0 auto; 
+	background-color: #ffe6cc; 
+	overflow: hidden; 
+}
+#header { 
+	width: 100%; 
+	background-color: #ffe6cc;
+	border-bottom: 1px solid #800000;
+}
+#content { 
+	width: 900px;
+	float: left; 
+	padding-bottom: 40px;
+}
+#sidebar { 
+	width: 400px; 
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+	background: #e6ffcc;
+	border: 1px solid #800000;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px #888888;
+}
+#sidebar p{
+	padding: 0;
+	float: right;
+}
+#footer { 
+	clear: both;
+	width: 100%; 
+	background-color: #ffe6cc;
+	border-top: 1px solid #800000;
+}
+#footer p {
+	margin: 0;
+	padding: 40px;
+}
