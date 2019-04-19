@@ -2,10 +2,10 @@
 /* CSS Document created by Kerri Cotter, Spring 2019*/
 
 body {
-	font-family: "Verdana", cursive, sans-serif;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 16px;
 	line-height: 1.8em;
-	color: #00000;;
+	color: #00000;
 	background-color: #ffe6cc;
 	padding: 0 40px;
 }
@@ -15,51 +15,34 @@ p, li, td {
 	letter-spacing: 0.1em;
 	color: #00000;
 	margin: 25px;
-	
 
 }
 h1 {
-	font-size: 35px;
-	font-weight: bolder;
+	font-size: 28px;
+	font-weight: bold;
 	padding: 4px 0;
 	margin: 25px;
-	font-variant: normal;
+	font-variant: small-caps;
 	letter-spacing: .4em;
 	line-height: 2em;
-	text-align:center;
-	
 }
 h2 {
-	font-size: 28px;
+	font-size: 24px;
 	padding: 6px;
 	margin: 25px;
-	font-variant: normal;
-	font-weight: lighter;
-	letter-spacing: 0.8em;
-	text-align: center;
+	font-variant: small-caps;
+	letter-spacing: 0.5em;
 	background-color: #ccccff;
-
 }
 h3 {
-	font-size: 25px;
-	letter-spacing: 0.25em;
+	font-size: 17px;
+	letter-spacing: 0.5em;
 	border-bottom-width: 1px;
 	border-bottom-style: inset;
 	border-bottom-color: #ccccff;
 	padding: 4px 0;
 	font-variant: small-caps;
 	font-style: italic;
-}
-h4 {
-	font-size: 20px;
-	letter-spacing: 0.25em;
-	border-bottom-width: 1px;
-	border-bottom-style: inset;
-	border-bottom-color: #ccccff;
-	padding: 4px 0;
-	font-variant: normal;
-	font-style: normal;
-	
 }
 
 /* link styles ---------------------------- */
@@ -109,8 +92,6 @@ hr {
 
 img {
 	border: solid #B22222 1px;
-	margin:auto;
-	text-align: center;
 
 }
 
@@ -119,46 +100,12 @@ iframe {
 	padding: 8px;
 	margin: 8px;
 }
+/* DIV STYLES FOR PAGE LAYOUT*/
 
-/* DIV STYLES FOR PAGE LAYOUT */
-
-#container { 
-	width: 900px; 
-	margin: 0 auto; 
-	background-color: #ffe6cc; 
-	overflow: hidden; 
-}
-#header { 
-	width: 100%; 
-	background-color: #ffe6cc;
-	border-bottom: 1px solid #800000;
-}
-#content { 
+#container {
 	width: 900px;
-	float: left; 
-	padding-bottom: 40px;
-}
-#sidebar { 
-	width: 400px; 
-	float: right;
-	margin-top: 30px;
-	margin-right: 20px;
-	background: #e6ffcc;
-	border: 1px solid #800000;
-	border-radius: 20px;
-	box-shadow: 10px 10px 5px #888888;
-}
-#sidebar p{
-	padding: 0;
-	float: right;
-}
-#footer { 
-	clear: both;
-	width: 100%; 
-	background-color: #ffe6cc;
-	border-top: 1px solid #800000;
-}
-#footer p {
-	margin: 0;
-	padding: 40px;
+	margin: 0 auto;
+	border: 1px solid #000;
+	background-color: #fff;
+	overflow: hidden;
 }
