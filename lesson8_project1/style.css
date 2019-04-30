@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/* CSS Document created by Kerri Cotter, Spring 2019*/
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	line-height: 1.8em;
+	color: #00000;;
+	background-color: #ccccff;
+	padding: 0 40px;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #000;
+	margin: 25px;
+	
+
+}
+h1 {
+	font-family:'Bangers', cursive;
+	font-size: 50px;
+	font-weight: bolder;
+	padding: 4px 0;
+	margin: 25px;
+	font-variant: normal;
+	letter-spacing: .4em;
+	line-height: 2em;
+	text-align:center;
+	color: #B22222;
+	
+}
+h2 {
+	font-size: 28px;
+	padding: 6px;
+	margin: 25px;
+	font-variant: normal;
+	font-weight: lighter;
+	letter-spacing: 0.8em;
+	text-align: center;
+	background-color: #ccccff;
+
+}
+h3 {
+	font-size: 20px;
+	letter-spacing: 0.25em;
+	border-bottom-width: 1px;
+	padding: 4px 0;
+	font-variant: small-caps;
+	font-style: italic;
+}
+h4 {
+	font-size: 20px;
+	letter-spacing: 0.25em;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #ccccff;
+	padding: 4px 0;
+	font-variant: normal;
+	font-style: normal;
+	
+}
+
+/* link styles ---------------------------- */
+a:link {
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff0000;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	list-style-image: url(images/star.png);
+	margin-left: 12px;
+	text-align: left;
+}
+ol {
+	margin-left: 14px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #ccccff 1px;
+}
+td {
+	padding: 6px;
+	border: solid #ccccff 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #ccccff;
+	text-align: center;
+	padding: 6px;
+	border: solid #e6ffcc 1px;
+}
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid #B22222 1px;
+}
+
+img {
+	border: solid #B22222 1px;
+	margin:auto;
+	text-align: center;
+
+
+}
+
+iframe {
+	border: solid 	#B22222 1px;
+	padding: 8px;
+	margin: 8px;
+}
+
+/* -------------------------- PAGE SECTIONS ---------------------------- */
+/* Visual sections of page are defined below in order of presentation */  
+
+#splash {
+   	background: url(images/FastFood.jpg) no-repeat center top fixed;
+   	background-size: cover;  
+	height: 1000px; /* dictates a taller section for title page allowing the background image to be seen */
+
+}
+/* Do noty dictate height for remaining sections since the content will dictate heights. */
+#overview {
+	padding: 40px 0 60px 0; /* top padding provides space for nav bar, bottom padding for asthetics */	
+   	background-color: #ccccff;
+	color: #fff;
+}
+
+#video {
+	padding: 40px 0 60px 0;	
+    background: url(images/junk.jpg) no-repeat center top fixed;
+	color: #fff;
+
+}
+
+#discography {
+	padding: 40px 0 60px 0;	
+    background-color: #ccccff;
+	color: #222;
+}
+
+#footer{
+  	background-color: #ccccff;
+  	color: #fff;
+  	padding: 20px 0;
+
+}
+
+/* ----------------- NAVIGATION BAR STYLES -------------------*/ 
+
+#navbar{
+	position: fixed; /* navbar should always be shown even when page is scrolled */
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background-color: rgb(186, 212, 255, 0.8); 
+}	
+/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+ul#menu {
+	list-style: none; /* eliminates bullets */
+	/* adjust padding top to adjust nav bar vertical position */
+	padding-top: 0px;
+
+} 
+ul#menu li {
+	float: left; /* changes list from vertical to horizontal */
+	padding-bottom: 20px;
+	padding-left: 100px;
+} 
+ul#menu li a.button {
+	font-size: 25px;
+	text-decoration: none;
+	/* this padding defines the size of the buttons */
+	padding: 20px 25px 20px 10px; 
+	
+}
+/* change button color when mouse hovers over */
+ul#menu li a.button:hover {
+	background-color: rgba(42, 188, 238, 0.1);
+}  
+
+/* ---------------- TITLE PAGE STYLES ------------------- */
+
+#title-page{
+  width: 100%;
+  padding-top: 200px; /* provides a lot of space above title to view the background image */
+  color: #000;
+  font-size: 30px;
+  text-align: right;
+  text-shadow: 3px 3px #e6ffcc; /* Shadow helps text to stand out from background */
+}
+#title-page h1 {
+  font-family: 'Bangers', cursive;; /* Amaranth is a Google Font - see link in head of index.html */
+  font-size: 100px; 	
+  text-shadow: 3px 3px #e6ffcc; /* Shadow helps text to stand out from background */
+color: #000;
+}
+#title-page h3 {
+  font-size: 1em;
+  font-style: italic;
+  margin: 0 40px;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+/* ------------------- FOOTER CREDITS --------------------- */
+#video h1 {
+	background-color:#e6ffcc;
+}
+#credits {
+  text-align: center;	
+}
+#credits table{      
+  margin: 0 auto;		/* centers the color palette table */
+  border-width: thin;
+}
+#credits p {
+  font-size: .8em;
+  margin: 10px 0;
+}
+
+/* ---------------- CONTAINER STYLES ----------------- */
+/* Containers are used to keep the page content within bounds centered in the browser window. */
+.container {
+  width: 960px; /* static width container always stays at this width no matter what the window size */
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* ---------------------- MISC -----------------------------*/
+
+.fltright{
+	float:right;
+	margin: 20px;
+}
