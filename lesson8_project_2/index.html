@@ -1,0 +1,282 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.1.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/carousel/">
+
+
+    <title>What is Childhood Obesity?</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    
+    <!-- Custom styles by Kerri Cotter -->
+    <style>
+      /* Navigation bar alterations */
+      .navbar-inverse {
+          background-color: #ccccff;        /* change navbar color to purple*/
+          border-color: #ccccff;            /* navbar border to purple */
+      }
+      .navbar-inverse .navbar-nav > li > a { 
+          color: #222222; 			       /* change navbar button font color to brighter white */
+      }
+      .navbar-inverse .navbar-brand {
+          color: #222222;                   /* change title at left on navbar to brighter white */
+      }
+      @media (min-width: 768px){            /* for large display sizes ... */
+        .navbar-wrapper .navbar {           /* give nav bar rounded ends */
+          border-radius: 30px;
+        }
+        .navbar-wrapper {                   /* pull nav bar to top of display */
+          margin-top: 0px;
+        }
+      }
+      /* Image carousel alterations */
+      .carousel-inner > .item > img {
+        height: auto;                       /* adjust height with image width to prevent image skewing */
+      }
+       @media (max-width: 899px){
+        .carousel {                         /* shorten carousel height on medium size displays */
+          height: 400px;
+        }
+        .carousel .item {
+          height: 400px;
+          background-color: #FFF;
+        }
+       }
+       @media (max-width: 719px){           
+          .carousel-inner > .item > img {   /* keep image at static size on small displays */
+            width: 719px;
+            max-width: 719px;
+            height: 400px;
+          }
+       }
+       /* Carousel image caption button alterations */
+       .btn-primary {
+          color: #222222;                   /* change image caption button font to white */
+          background-color: #ccccff;        /* change image caption button to gold */
+          border-color: #ccccff;
+        }
+        .btn-primary:hover {  
+		   color: #FFF;                 /* change image caption button font to white on hover */
+          background-color: #3CB371;        /* change image caption button to gold */
+          border-color: #3CB371;
+		   
+		   
+
+        }
+    </style>  
+  </head>
+
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">What is Childhood Obesity?</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Educational Videos</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="How to Make Healthy Food Choices">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Helpful Resources <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">BMI calculator</a></li>
+                    <li><a href="#">Nutrient Dense Foods</a></li>
+                    <li><a href="#">Junk Food Alternatives</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">The Importance of Youth Sports</a></li>
+                    <li><a href="#">2019 U.S Childhood Obesity Statistics</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+         <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/dr.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>How To Check Your BMI</h1>
+              <p>Do you know what your body mass index is? Here's how you can find out.<code></code></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/fruit.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>How to Incorporate Healthier Foods into Your Diet</h1>
+              <p>The more colorful your plate - the better! How to make healthy food choices based on your nutritional needs.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/1c.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>How Much Sugar is Really that Bad for you?</h1>
+              <p>Why you should be conscious about the amount of sugar you consume daily.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+          <img class="fourth-slide" src="images/werk.jpg" alt="Fourth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Do you Get the Minimum Recommended Amount of Daily Physical Activity?</h1>
+              <p>Why you should be conscious about the amount of sugar you consume daily.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+            </div>
+          </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/3a.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Why Fast Food Chains are Part to Blame for America's Obesity Crisis?</h2>
+          <p>Single, Double, or Triple Patty? What toppings would you like -- stuffed and smothered in cheese,bacon, mayonaise, etc? Americans are finding it harder and harder to eat healthy when restaurants and fast food restaurants keep making their meals, bigger, more deluxe, and therefore most of the time fattier and more unhealthy. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/3b.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Is Candy to Blame?</h2>
+          <p>Sugar is a leading factor in the cause of obesity. How much sugar are you or your children consuming daily? Should we eliminate sugary candies from our diet?</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/3c.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Healthier Cooking Alternatives to Deep Fried Food</h2>
+          <p>How to make healthier french fries, onion rings, and mozzeralla sticks - the foods you don't want to live without. A few substitutions is al you need!</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Together, We Can Get Better Day by Day! <span class="text-muted">Just Get Active</span></h2>
+          <p class="lead">An hour of physical activity a day is all it takes to get started.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/workout.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Track Your Calories <span class="text-muted">Here's How to Start</span></h2>
+          <p class="lead">Being more aware of your daily food intake will help you understand problem areas and discover what food groups you need more of or are lacking.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="images/note.jpeg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Cut Back on Fast Food and Watch Your Processed Foods! <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Make a goal to limit yourself to eating out less per week and if you find yourself needing to, then know good, healthy options you have. If you are cooking for yourself, make sure you include lots of vegetables!</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/veg.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; Kerri Cotter &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>');</script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    
+    <script src="js/holder.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
